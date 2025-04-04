@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "827412658992",
+    "project_id": "yoga-se-hoga-d77fd",
+    "storage_bucket": "yoga-se-hoga-d77fd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827412658992:android:d25736e00d3651e536e6f5",
+        "android_client_info": {
+          "package_name": "com.example.yogasehoga"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGUhw4uWhoNC0bebp55yxrdt2b1g3q4AQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

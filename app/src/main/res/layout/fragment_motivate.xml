@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".motivateFragment"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@mipmap/logo_foreground" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:gravity="center"
+            android:text="What motivates you the most ?"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"/>
+
+        <RadioGroup
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/lyoung"
+                android:layout_width="292dp"
+                android:layout_height="55dp"
+                android:background="@drawable/linear_layout_border"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="Stay Young"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/young"
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Stay-Young"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lstress"
+                android:layout_width="292dp"
+                android:layout_height="55dp"
+                android:background="@drawable/linear_layout_border"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="Reduce Stress"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/stress"
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Reduce-Stress"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lhealth"
+                android:layout_width="292dp"
+                android:layout_height="55dp"
+                android:background="@drawable/linear_layout_border"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="Improve health"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/health"
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Improve-health"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lflexibility"
+                android:layout_width="292dp"
+                android:layout_height="55dp"
+                android:background="@drawable/linear_layout_border"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="Improve flexibility"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/flexibility"
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Improve-flexibility"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lbetter"
+                android:layout_width="292dp"
+                android:layout_height="55dp"
+                android:background="@drawable/linear_layout_border"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="Sleep better"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/better"
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Sleep-better"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lfocus"
+                android:layout_width="292dp"
+                android:layout_height="55dp"
+                android:background="@drawable/linear_layout_border"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="Improve focus"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/focus"
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Improve-focus"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lenergy"
+                android:layout_width="292dp"
+                android:layout_height="55dp"
+                android:background="@drawable/linear_layout_border"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="Boost energy"
+                    android:textSize="17dp" />
+
+                <RadioButton
+                    android:id="@+id/energy"
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:tag="Boost-energy"/>
+
+            </LinearLayout>
+
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="175dp"
+            android:layout_height="48dp"
+            android:text="Next"
+            android:layout_marginTop="35dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".maingoalFragment"
+    android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/textView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@mipmap/logo_foreground" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="What is your main goal ?"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="351dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/llooseweight"
+                    android:layout_width="286dp"
+                    android:layout_height="86dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/linear_layout_border"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:layout_width="196dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Lose weight"
+                        android:textSize="17dp" />
+
+                    <RadioButton
+                        android:id="@+id/looseweight"
+                        android:layout_width="75dp"
+                        android:layout_height="86dp"
+                        android:button="@drawable/fatt"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:tag="Lose-weight"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lkeepfit"
+                    android:layout_width="286dp"
+                    android:layout_height="86dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/linear_layout_border"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:layout_width="315dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Keep fit"
+                        android:textSize="17dp" />
+
+                    <RadioButton
+                        android:id="@+id/keepfit"
+                        android:layout_width="78dp"
+                        android:layout_height="86dp"
+                        android:gravity="center"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:button="@drawable/fitt"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:tag="Keep-fit"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lrelax"
+                    android:layout_width="286dp"
+                    android:layout_height="86dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/linear_layout_border"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:layout_width="315dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Relax"
+                        android:textSize="17dp" />
+
+                    <RadioButton
+                        android:id="@+id/relax"
+                        android:layout_width="78dp"
+                        android:layout_height="86dp"
+                        android:gravity="center"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:button="@drawable/relaxx"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:tag="Relax"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lflexible"
+                    android:layout_width="286dp"
+                    android:layout_height="86dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/linear_layout_border"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:layout_width="315dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Flexible"
+                        android:textSize="17dp" />
+
+                    <RadioButton
+                        android:id="@+id/flexible"
+                        android:layout_width="78dp"
+                        android:layout_height="86dp"
+                        android:gravity="center"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:button="@drawable/flexibel"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:tag="Flexible"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lrecover"
+                    android:layout_width="286dp"
+                    android:layout_height="86dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/linear_layout_border"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:layout_width="315dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Recover"
+                        android:textSize="17dp" />
+
+                    <RadioButton
+                        android:id="@+id/recover"
+                        android:layout_width="78dp"
+                        android:layout_height="86dp"
+                        android:gravity="center"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:button="@drawable/recoverr"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:tag="Recover"/>
+
+                </LinearLayout>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="175dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="25dp"
+                android:text="Next" />
+        </LinearLayout>
+</RelativeLayout>

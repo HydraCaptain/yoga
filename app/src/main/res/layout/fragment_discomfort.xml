@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".discomfortFragment"
+    android:gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/textView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@mipmap/logo_foreground" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Have you any discomfort ?"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="351dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/lnone"
+                    android:layout_width="286dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/linear_layout_border"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="16dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="36dp"
+                        android:text="None"
+                        android:textSize="17dp" />
+
+                    <RadioButton
+                        android:id="@+id/none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="75dp"
+                        android:gravity="center"
+                        android:tag="none"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lwrist"
+                    android:layout_width="286dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/linear_layout_border"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="10dp"
+                        android:text="Wrist"
+                        android:textSize="17dp"
+                        android:gravity="center"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:src="@drawable/wristt"/>
+
+                    <RadioButton
+                        android:id="@+id/wrist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="75dp"
+                        android:gravity="center"
+                        android:tag="Wrist"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/larm"
+                    android:layout_width="286dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/linear_layout_border"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="10dp"
+                        android:text="Arm"
+                        android:textSize="17dp"
+                        android:gravity="center"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:src="@drawable/armm" />
+
+                    <RadioButton
+                        android:id="@+id/arm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="75dp"
+                        android:gravity="center"
+                        android:tag="Arm"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lback"
+                    android:layout_width="286dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/linear_layout_border"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="10dp"
+                        android:text="Back"
+                        android:textSize="17dp"
+                        android:gravity="center"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:src="@drawable/backk"/>
+
+                    <RadioButton
+                        android:id="@+id/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="75dp"
+                        android:gravity="center"
+                        android:tag="Back"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lkneee"
+                    android:layout_width="286dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/linear_layout_border"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="10dp"
+                        android:text="Knee"
+                        android:textSize="17dp"
+                        android:gravity="center"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:src="@drawable/knee"/>
+
+                    <RadioButton
+                        android:id="@+id/kneee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="75dp"
+                        android:gravity="center"
+                        android:tag="Knee"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lankle"
+                    android:layout_width="286dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/linear_layout_border"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="10dp"
+                        android:text="Ankle"
+                        android:textSize="17dp"
+                        android:gravity="center"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:src="@drawable/anklee"/>
+
+                    <RadioButton
+                        android:id="@+id/ankle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="75dp"
+                        android:gravity="center"
+                        android:tag="Ankle"/>
+
+                </LinearLayout>
+            </RadioGroup>
+            <ProgressBar
+                android:id="@+id/pbarr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:elevation="20dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="175dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="25dp"
+                android:text="Next" />
+        </LinearLayout>
+
+</RelativeLayout>
