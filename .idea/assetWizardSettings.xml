@@ -79,7 +79,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="E:\yoga assets\Untitled design_20241217_083413_0000.png" />
+                                                <entry key="imagePath" value="E:\Yoga_App-main\app\src\main\res\drawable-v24\img_hips.png" />
                                                 <entry key="scalingPercent" value="87" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
@@ -113,8 +113,7 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="foregroundLayerName" value="logo_main" />
-                                      <entry key="outputName" value="logo" />
+                                      <entry key="outputName" value="hips" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -308,7 +307,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/logout/baseline_logout_24.xml" />
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/edit/baseline_edit_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -318,7 +317,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="baseline_logout_24" />
+                            <entry key="outputName" value="ic_baseline_edit_24" />
                             <entry key="sourceFile" value="C:\Users\kumar\Downloads\young.svg" />
                           </map>
                         </option>

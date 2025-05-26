@@ -44,4 +44,5 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
     implementation("androidx.fragment:fragment-ktx:1.5.1")
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
 }

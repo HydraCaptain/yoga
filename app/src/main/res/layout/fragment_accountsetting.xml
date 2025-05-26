@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Accountsetting">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="My Details"
+            android:textSize="30dp"
+            android:paddingStart="10dp"
+            android:gravity="center"
+            android:layout_marginBottom="50dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Age"
+            android:textSize="20dp"
+            android:paddingStart="10dp" />
+
+        <Button
+            android:id="@+id/userAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textSize="20sp"
+            android:textAlignment="textStart"
+            android:drawableEnd="@drawable/ic_baseline_edit_24"
+            android:drawableTint="@color/onPrimary"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="30dp"
+            android:minHeight="40dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Current weight in kg"
+            android:textSize="20dp"
+            android:paddingStart="10dp" />
+
+        <Button
+            android:id="@+id/userCurrentWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textSize="20sp"
+            android:textAlignment="textStart"
+            android:drawableEnd="@drawable/ic_baseline_edit_24"
+            android:drawableTint="@color/onPrimary"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="30dp"
+            android:minHeight="40dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Target weight in kg"
+            android:textSize="20dp"
+            android:paddingStart="10dp" />
+
+        <Button
+            android:id="@+id/userTargetWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textSize="20sp"
+            android:textAlignment="textStart"
+            android:drawableEnd="@drawable/ic_baseline_edit_24"
+            android:drawableTint="@color/onPrimary"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="30dp"
+            android:minHeight="40dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Height in cm"
+            android:textSize="20dp"
+            android:paddingStart="10dp" />
+
+        <Button
+            android:id="@+id/userHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textSize="20sp"
+            android:textAlignment="textStart"
+            android:drawableEnd="@drawable/ic_baseline_edit_24"
+            android:drawableTint="@color/onPrimary"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="30dp"
+            android:minHeight="40dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Gender"
+            android:textSize="20dp"
+            android:paddingStart="10dp" />
+
+        <Button
+            android:id="@+id/userGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textSize="20sp"
+            android:textAlignment="textStart"
+            android:drawableEnd="@drawable/ic_baseline_edit_24"
+            android:drawableTint="@color/onPrimary"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="30dp"
+            android:minHeight="40dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="70dp" />
+
+    </LinearLayout>
+
+</ScrollView>

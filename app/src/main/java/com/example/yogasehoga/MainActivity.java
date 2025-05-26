@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -57,27 +58,16 @@ FirebaseAuth mAuth;
                 Toast.makeText(MainActivity.this, "Me Clicked", Toast.LENGTH_SHORT).show();
                 replaceFragment(new Me());
                 return true;
-            } else if (id == R.id.nav_logout) {
-                logoutUser();
-                return true;
             }
-
             return false;
         });
-    }
 
-    private void logoutUser() {
 
-        FirebaseAuth.getInstance().signOut();
-        Intent intent = new Intent(MainActivity.this, login.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        startActivity(intent);
-        Toast.makeText(this, "Logged out successfully", Toast.LENGTH_SHORT).show();
-        finish();
     }
-    private void replaceFragment(Fragment fragment) {
+    public void replaceFragment(Fragment fragment) {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.container, fragment);
-        transaction.commit();
+        transaction.addToBackStack(null)
+                .commit();;
     }
 }
