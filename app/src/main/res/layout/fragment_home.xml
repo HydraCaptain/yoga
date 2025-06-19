@@ -14,6 +14,7 @@
         android:paddingEnd="10dp"
         tools:context=".Home">
 
+
         <TextView
             android:id="@+id/txtTitle"
             android:layout_width="match_parent"
@@ -23,83 +24,55 @@
             android:shadowDy="0"
             android:shadowRadius="2"
             android:text="Good Morning"
-            android:shadowColor="@color/onPrimary"
-            android:textColor="@color/onPrimary_night"
             android:textSize="34dp" />
 
         <SearchView
+            android:id="@+id/mysearch"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@drawable/linear_layout_border"
-            />
+            android:padding="5dp"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search..."
+            android:background="@drawable/linear_layout_border" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/yogaSuggestionsRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:shadowColor="@color/onPrimary"
             android:shadowDx="2"
             android:shadowDy="0"
             android:shadowRadius="2"
             android:text="Recommended yoga"
-            android:textColor="@color/onPrimary_night"
             android:textSize="25dp" />
 
-        <GridLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:columnCount="2"
-            android:rowCount="4"
-            android:padding="8dp"
-            android:layout_marginTop="15dp">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
 
             <ImageButton
+                android:id="@+id/recommendedyogabtn"
                 android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:scaleType="centerCrop"
-                android:background="@drawable/linear_layout_border"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:layout_margin="10dp"
-                app:srcCompat="@mipmap/logo_foreground" />
-
-            <ImageButton
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
+                android:src="@drawable/recomyg"
                 android:scaleType="centerCrop"
-                android:background="@drawable/linear_layout_border"
-                android:layout_margin="10dp"
-                app:srcCompat="@mipmap/logo_foreground" />
+                android:adjustViewBounds="true"
+                android:background="@drawable/simple_border"/>
 
-            <ImageButton
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:scaleType="centerCrop"
-                android:background="@drawable/linear_layout_border"
-                android:layout_margin="10dp"
-                app:srcCompat="@mipmap/logo_foreground" />
-
-            <Button
-                android:id="@+id/viewmore"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:scaleType="centerCrop"
-                android:background="@drawable/linear_layout_border"
-                android:text="View More"
-                android:textSize="20dp"
-                android:layout_margin="10dp" />
+        </LinearLayout>
 
 
-
-        </GridLayout>
 
         <TextView
             android:id="@+id/txtPose"
@@ -107,80 +80,135 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:text="Pain Area"
-            android:shadowColor="@color/onPrimary"
-            android:textColor="@color/onPrimary_night"
             android:textSize="25dp" />
 
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:columnCount="3"
+            android:columnCount="2"
             android:rowCount="2"
             android:padding="8dp"
             android:layout_marginTop="15dp">
 
             <ImageButton
+                android:id="@+id/armre"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:scaleType="centerCrop"
-                android:background="@drawable/linear_layout_border"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:backgroundTint="@color/onPrimary"
                 android:layout_margin="10dp"
-                android:src="@drawable/armm"/>
+                android:src="@drawable/img_arm"/>
 
             <ImageButton
+                android:id="@+id/anklere"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:scaleType="centerCrop"
-                android:background="@drawable/linear_layout_border"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:backgroundTint="@color/onPrimary"
                 android:layout_margin="10dp"
-                android:src="@drawable/backk"/>
+                android:src="@drawable/ankle1"/>
 
             <ImageButton
+                android:id="@+id/backre"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:scaleType="centerCrop"
-                android:background="@drawable/linear_layout_border"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:backgroundTint="@color/onPrimary"
                 android:layout_margin="10dp"
-                android:src="@drawable/wristt"/>
-            <ImageButton
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:scaleType="centerCrop"
-                android:background="@drawable/linear_layout_border"
-                android:layout_margin="10dp"
-                android:src="@drawable/knee"/>
+                android:src="@drawable/back1"/>
 
             <ImageButton
+                android:id="@+id/balancere"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:scaleType="centerCrop"
-                android:background="@drawable/linear_layout_border"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:backgroundTint="@color/onPrimary"
                 android:layout_margin="10dp"
-                android:src="@drawable/anklee"/>
+                android:src="@drawable/img_balance"/>
 
-            <Button
-                android:id="@+id/viewmore2"
+            <ImageButton
+                android:id="@+id/chestre"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                android:scaleType="centerCrop"
-                android:background="@drawable/linear_layout_border"
-                android:text="View More"
-                android:textSize="20dp"
-                android:layout_margin="10dp" />
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:backgroundTint="@color/onPrimary"
+                android:layout_margin="10dp"
+                android:src="@drawable/img_chest"/>
+
+            <ImageButton
+                android:id="@+id/hipsre"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:backgroundTint="@color/onPrimary"
+                android:layout_margin="10dp"
+                android:src="@drawable/img_hips"/>
+
+            <ImageButton
+                android:id="@+id/kneere"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:backgroundTint="@color/onPrimary"
+                android:layout_margin="10dp"
+                android:src="@drawable/kne11"/>
+
+            <ImageButton
+                android:id="@+id/relaxre"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:backgroundTint="@color/onPrimary"
+                android:layout_margin="10dp"
+                android:src="@drawable/mind1"/>
+
+
         </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/allImageButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:src="@drawable/allyogabtn"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:background="@color/secondary" />
+            <!-- Optional: for ripple effect -->
+
+        </LinearLayout>
     </LinearLayout>
 
 

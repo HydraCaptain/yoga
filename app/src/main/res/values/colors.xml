@@ -4,18 +4,20 @@
 
 
     <!-- Light Theme Colors -->
-    <color name="primary">#6425BF</color>
+    <color name="primary">#6A82FB</color>
     <color name="onPrimary">#FFFFFF</color>
-    <color name="secondary">#03DAC6</color>
+    <color name="secondary">#00BFA5</color>
     <color name="onSecondary">#000000</color>
-    <color name="background">#FFFFFF</color>
-    <color name="onBackground">#000000</color>
+    <color name="background">#FAFAFA</color>
+    <color name="onBackground">#212121</color>
     <color name="surface">#F5F5F5</color>
     <color name="onSurface">#000000</color>
 
     <!-- Dark Theme Colors -->
-    <color name="primary_night">#C394FB</color>
+    <color name="primary_night">#A3B9FF</color>
     <color name="onPrimary_night">#000000</color>
+    <color name="secondary_night">#64FFDA</color>
+    <color name="onSecondary_night">#000000</color>
     <color name="background_night">#121212</color>
     <color name="onBackground_night">#FFFFFF</color>
     <color name="surface_night">#1E1E1E</color>

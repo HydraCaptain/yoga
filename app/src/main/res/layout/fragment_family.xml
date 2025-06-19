@@ -15,6 +15,7 @@
         android:padding="8dp">
 
         <ImageButton
+            android:id="@+id/Childbtn"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:layout_columnWeight="1"
@@ -22,8 +23,10 @@
             android:scaleType="centerCrop"
             android:background="@drawable/linear_layout_border"
             android:layout_margin="10dp"
-            android:src="@drawable/child"/>
+            android:src="@drawable/child" />
+
         <ImageButton
+            android:id="@+id/Teenagebtn"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:layout_columnWeight="1"
@@ -32,7 +35,9 @@
             android:background="@drawable/linear_layout_border"
             android:layout_margin="10dp"
             android:src="@drawable/teenage" />
+
         <ImageButton
+            android:id="@+id/Youngbtn"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:layout_columnWeight="1"
@@ -41,7 +46,9 @@
             android:background="@drawable/linear_layout_border"
             android:layout_margin="10dp"
             android:src="@drawable/young" />
+
         <ImageButton
+            android:id="@+id/Oldbtn"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:layout_columnWeight="1"

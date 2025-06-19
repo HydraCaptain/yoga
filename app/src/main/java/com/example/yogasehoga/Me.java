@@ -31,6 +31,7 @@ public class Me extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         Accountbtn = view.findViewById(R.id.btnAccount);
         logoutbtn = view.findViewById(R.id.logout);
+        mAuth = FirebaseAuth.getInstance();
 
         logoutbtn.setOnClickListener(v -> {
             new AlertDialog.Builder(requireContext())

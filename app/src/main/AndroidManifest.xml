@@ -20,12 +20,6 @@
         android:theme="@style/Theme.YogaSeHoga"
         tools:targetApi="31" >
         <activity
-            android:name=".UploadYogaActivity"
-            android:exported="false" />
-        <activity
-            android:name=".UploadYogaActivity.java"
-            android:exported="false" />
-        <activity
             android:name=".splashscreen"
             android:exported="true" >
             <intent-filter>
